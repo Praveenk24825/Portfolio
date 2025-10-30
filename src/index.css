@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fadeDown {
+  animation: fadeDown 0.4s ease-in-out;
+}
