@@ -33,7 +33,8 @@ const skills = [
 
   // 🌐 Others
   "Video Editing",
-  
+  "davinci Resolve",
+  ""
 ];
 
 export default function Skills() {

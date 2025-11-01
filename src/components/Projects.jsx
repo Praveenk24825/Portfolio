@@ -1,29 +1,35 @@
 export default function Projects() {
   const projects = [
     {
-      title: "MERN Recipe Sharing Platform",
+      title: "Recipe Sharing Platform",
       desc: "A complete recipe app with image/video upload, filters, and user interactions.",
       tech: ["MongoDB", "Express", "React", "Node"],
-      link: "https://qwery90.netlify.app", // 🔗 Add your link
+      link: "https://qwery902.netlify.app/", // 🔗 Add your link
     },
     {
       title: "Smart Expense Tracker",
       desc: "React + Tailwind app to manage expenses with filters, charts, and insights.",
       tech: ["React", "Tailwind", "Chart.js"],
-      link: "https://updatedata23.netlify.app/",
+      link: "https://finahy.netlify.app/",
     },
     {
-      title: "Forgot Password Feature",
-      desc: "This feature allows users to reset their password.",
-      tech: ["MongoDB", "Express", "React", "Node", "JWT"],
-      link: "https://qwery98.netlify.app/forgot-password",
+      title: "NoteKeeper",
+      desc: "A note-taking app with rich text editing, tagging, and search functionality.",
+      tech: ["React", "HTML5", "CSS3", "JavaScript"],
+      link: "https://notesgh.netlify.app/",
     },
     {
       title: "E-Commerce App",
       desc: "MERN-based store with cart, wishlist, and Stripe payment integration.",
       tech: ["MERN", "Stripe", "JWT"],
-      link: "https://qwery55.netlify.app/",
+      link: "https://ecommerce45679.netlify.app/",
     },
+    {
+      title:"Movie Search App",
+      desc:"Search movies using the OMDB API with React and Tailwind CSS.",
+      tech:["React","Tailwind","OMDB API"],
+      link:"https://final345.netlify.app/",
+    }
   ];
 
   return (
