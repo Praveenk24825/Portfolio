@@ -4,13 +4,13 @@ export default function UIUX() {
       title: "Nexcent – Travel Explorer Website",
       desc: "A vibrant travel platform UI design with floating cards, clean layout,for premium look.",
       tool: ["Figma", "Adobe XD"],
-      link: "https://nexcent56.netlify.app/", // 🔗 Replace with your actual Figma/Behance link
+      link: "https://nexcent1-xfer.vercel.app/", // 🔗 Replace with your actual Figma/Behance link
     },
     {
       title: "AskmeIdenty – Portfolio Redesign (Dark Luxe)",
       desc: "This about learning platform UI redesign features a dark theme with gold accents, sleek typography, and modern aesthetics.",
       tool: ["Figma"],
-      link: "https://asder.netlify.app/", // 🔗 Replace with your link
+      link: "https://nexcent1-xfer.vercel.app/", // 🔗 Replace with your link
     },
   ];
 
