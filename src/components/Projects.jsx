@@ -1,35 +1,29 @@
 export default function Projects() {
   const projects = [
     {
-      title: "Recipe Sharing Platform",
-      desc: "A complete recipe app with image/video upload, filters, and user interactions.",
-      tech: ["MongoDB", "Express", "React", "Node"],
-      link: "https://qwery902.netlify.app/", // 🔗 Add your link
+      title: "Recipe Sharing Platform (MERN)",
+      desc: "A full-stack recipe application where users can upload photos/videos, save favorites, add reviews, and explore recipes with advanced filters.",
+      tech: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT", "Cloud Upload"],
+      live: "https://qwery902.netlify.app/",
+      frontend: "https://github.com/Praveenk24825/RecipeFrontend",
+      backend: "https://github.com/Praveenk24825/recipe-backend",
     },
     {
-      title: "Smart Expense Tracker",
-      desc: "React + Tailwind app to manage expenses with filters, charts, and insights.",
-      tech: ["React", "Tailwind", "Chart.js"],
-      link: "https://finahy.netlify.app/",
+      title: "E-Commerce Application (MERN)",
+      desc: "A complete e-commerce platform with authentication, cart, wishlist, product management, and Stripe payment gateway.",
+      tech: ["MERN Stack", "JWT Auth", "Stripe", "REST API", "Tailwind"],
+      live: "https://ecommerce45679.netlify.app/",
+      frontend: "https://github.com/Praveenk24825/Ecommercefrontend",
+      backend: "https://github.com/Praveenk24825/Ecommercebackend",
     },
     {
-      title: "NoteKeeper",
-      desc: "A note-taking app with rich text editing, tagging, and search functionality.",
-      tech: ["React", "HTML5", "CSS3", "JavaScript"],
-      link: "https://notesgh.netlify.app/",
+      title: "Smart Expense Tracker (MERN)",
+      desc: "A smart expense management system with CRUD features, monthly filters, category charts, and dashboard analytics.",
+      tech: ["MongoDB", "Express.js", "React.js", "Node.js", "Recharts", "JWT"],
+      live: "https://finahy.netlify.app/",
+      frontend: "https://github.com/Praveenk24825/SmartExpenseCalculator",
+      backend: "https://github.com/Praveenk24825/BackendProject",
     },
-    {
-      title: "E-Commerce App",
-      desc: "MERN-based store with cart, wishlist, and Stripe payment integration.",
-      tech: ["MERN", "Stripe", "JWT"],
-      link: "https://ecommerce45679.netlify.app/",
-    },
-    {
-      title:"Movie Search App",
-      desc:"Search movies using the OMDB API with React and Tailwind CSS.",
-      tech:["React","Tailwind","OMDB API"],
-      link:"https://final345.netlify.app/",
-    }
   ];
 
   return (
@@ -71,15 +65,32 @@ export default function Projects() {
                 ))}
               </div>
 
-              {/* Project Link */}
-              <a
-                href={p.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block text-sm font-semibold text-black bg-yellow-400 px-6 py-2 rounded-full hover:bg-yellow-500 hover:scale-105 transition-transform shadow-[0_0_12px_rgba(255,215,0,0.4)]"
-              >
-                🔗 View Project
-              </a>
+              {/* Project Links */}
+              <div className="flex flex-col gap-3">
+                <a
+                  href={p.live}
+                  target="_blank"
+                  className="inline-block text-sm font-semibold text-black bg-yellow-400 px-6 py-2 rounded-full hover:bg-yellow-500 hover:scale-105 transition-transform"
+                >
+                  🔗 Live Demo
+                </a>
+
+                <a
+                  href={p.frontend}
+                  target="_blank"
+                  className="text-yellow-300 underline text-sm hover:text-yellow-400"
+                >
+                  🖥️ Frontend GitHub
+                </a>
+
+                <a
+                  href={p.backend}
+                  target="_blank"
+                  className="text-yellow-300 underline text-sm hover:text-yellow-400"
+                >
+                  ⚙️ Backend GitHub
+                </a>
+              </div>
             </div>
           ))}
         </div>
