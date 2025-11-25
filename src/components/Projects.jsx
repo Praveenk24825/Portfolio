@@ -1,10 +1,12 @@
+import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+
 export default function Projects() {
   const projects = [
     {
       title: "Recipe Sharing Platform (MERN)",
       desc: "A full-stack recipe application where users can upload photos/videos, save favorites, add reviews, and explore recipes with advanced filters.",
       tech: ["MongoDB", "Express.js", "React.js", "Node.js", "JWT", "Cloud Upload"],
-      live: "https://qwery902.netlify.app/",
+      live: "https://recipefrontend45.netlify.app/",
       frontend: "https://github.com/Praveenk24825/RecipeFrontend",
       backend: "https://github.com/Praveenk24825/recipe-backend",
     },
@@ -12,7 +14,7 @@ export default function Projects() {
       title: "E-Commerce Application (MERN)",
       desc: "A complete e-commerce platform with authentication, cart, wishlist, product management, and Stripe payment gateway.",
       tech: ["MERN Stack", "JWT Auth", "Stripe", "REST API", "Tailwind"],
-      live: "https://ecommerce45679.netlify.app/",
+      live: "https://todofrontend-j36o.vercel.app/",
       frontend: "https://github.com/Praveenk24825/Ecommercefrontend",
       backend: "https://github.com/Praveenk24825/Ecommercebackend",
     },
@@ -20,7 +22,7 @@ export default function Projects() {
       title: "Smart Expense Tracker (MERN)",
       desc: "A smart expense management system with CRUD features, monthly filters, category charts, and dashboard analytics.",
       tech: ["MongoDB", "Express.js", "React.js", "Node.js", "Recharts", "JWT"],
-      live: "https://finahy.netlify.app/",
+      live: "https://smart-expense-calculator.vercel.app/",
       frontend: "https://github.com/Praveenk24825/SmartExpenseCalculator",
       backend: "https://github.com/Praveenk24825/BackendProject",
     },
@@ -46,13 +48,13 @@ export default function Projects() {
               className="relative bg-[#111]/80 border border-yellow-400/30 backdrop-blur-md p-8 rounded-2xl shadow-[0_0_25px_rgba(255,255,0,0.15)] hover:shadow-[0_0_35px_rgba(255,255,0,0.25)] transition duration-500"
             >
               <div className="absolute inset-0 bg-gradient-to-br from-transparent via-yellow-400/5 to-transparent rounded-2xl pointer-events-none"></div>
-              
+
               {/* Title */}
               <h3 className="text-2xl font-bold text-yellow-300 mb-3">{p.title}</h3>
-              
+
               {/* Description */}
               <p className="text-gray-300 leading-relaxed mb-4">{p.desc}</p>
-              
+
               {/* Tech Stack */}
               <div className="flex flex-wrap gap-2 mt-2 mb-6">
                 {p.tech.map((t, j) => (
@@ -67,28 +69,32 @@ export default function Projects() {
 
               {/* Project Links */}
               <div className="flex flex-col gap-3">
+
+                {/* Live Demo */}
                 <a
                   href={p.live}
                   target="_blank"
-                  className="inline-block text-sm font-semibold text-black bg-yellow-400 px-6 py-2 rounded-full hover:bg-yellow-500 hover:scale-105 transition-transform"
+                  className="inline-flex items-center justify-center gap-2 text-sm font-semibold text-black bg-yellow-400 px-6 py-2 rounded-full hover:bg-yellow-500 hover:scale-105 transition-transform"
                 >
-                  🔗 Live Demo
+                  <FaExternalLinkAlt /> Live Demo
                 </a>
 
+                {/* Frontend Repo */}
                 <a
                   href={p.frontend}
                   target="_blank"
-                  className="text-yellow-300 underline text-sm hover:text-yellow-400"
+                  className="flex items-center gap-2 text-sm font-semibold bg-[#1a1a1a] border border-yellow-400/40 text-yellow-300 px-5 py-2 rounded-full hover:bg-yellow-400 hover:text-black hover:scale-105 transition"
                 >
-                  🖥️ Frontend GitHub
+                  <FaGithub /> Frontend Repository
                 </a>
 
+                {/* Backend Repo */}
                 <a
                   href={p.backend}
                   target="_blank"
-                  className="text-yellow-300 underline text-sm hover:text-yellow-400"
+                  className="flex items-center gap-2 text-sm font-semibold bg-[#1a1a1a] border border-yellow-400/40 text-yellow-300 px-5 py-2 rounded-full hover:bg-yellow-400 hover:text-black hover:scale-105 transition"
                 >
-                  ⚙️ Backend GitHub
+                  <FaGithub /> Backend Repository
                 </a>
               </div>
             </div>
