@@ -68,6 +68,67 @@ export default function Contact() {
         </a>
       </motion.div>
 
+      {/* Contact Form */}
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.6, duration: 0.8 }}
+        viewport={{ once: true }}
+        className="max-w-xl mx-auto mt-20 bg-[#0d0d0d] p-8 rounded-2xl border border-yellow-400/20 shadow-[0_0_20px_rgba(255,215,0,0.15)]"
+      >
+        <h3 className="text-3xl font-bold text-yellow-400 mb-6">Send Me a Message</h3>
+
+        <form
+          action="https://formspree.io/f/mjkbqwnq"
+          method="POST"
+          className="space-y-6"
+        >
+          {/* Name */}
+          <div>
+            <label className="block text-gray-300 font-medium mb-2">Your Name</label>
+            <input
+              type="text"
+              name="name"
+              required
+              className="w-full p-3 bg-[#111] border border-gray-700 rounded-lg text-white focus:border-yellow-400 outline-none"
+              placeholder="Enter your name"
+            />
+          </div>
+
+          {/* Email */}
+          <div>
+            <label className="block text-gray-300 font-medium mb-2">Your Email</label>
+            <input
+              type="email"
+              name="email"
+              required
+              className="w-full p-3 bg-[#111] border border-gray-700 rounded-lg text-white focus:border-yellow-400 outline-none"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          {/* Message */}
+          <div>
+            <label className="block text-gray-300 font-medium mb-2">Message</label>
+            <textarea
+              name="message"
+              rows="5"
+              required
+              className="w-full p-3 bg-[#111] border border-gray-700 rounded-lg text-white focus:border-yellow-400 outline-none"
+              placeholder="Write your message..."
+            ></textarea>
+          </div>
+
+          {/* Submit Button */}
+          <button
+            type="submit"
+            className="w-full bg-yellow-400 text-black font-semibold py-3 rounded-lg hover:bg-yellow-500 transition-transform hover:scale-105"
+          >
+            Send Message
+          </button>
+        </form>
+      </motion.div>
+
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
